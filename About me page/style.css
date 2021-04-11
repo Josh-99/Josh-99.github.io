@@ -193,6 +193,7 @@ p {
     margin: 0 auto;
     padding: 5px;
     transition: all 1.5s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .form-button:hover {
