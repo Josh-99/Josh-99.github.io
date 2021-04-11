@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The below loads font awesome via javascript which is placed at the head of the page. Basically we are rendering font awesome before rendering the page which means it should load quicker.-->
+    <script type="text/javascript">
+        (function() {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
+
+    <title>Josh Millers About Me</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id='Home'>
+        <div>
+            <nav class="nav">
+                <div class='nav-header'>
+                    <a href="#Home" class="title">Josh Miller</a>
+                    <button class='nav-toggle'>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class='links-container'>
+                    <div class='links'>
+                        <a href="#About Me" class="link one">About Me</a>
+                        <a href="#My Hobbies" class="link two">My Hobbies</a>
+                        <a href="#My Job" class="link three">My Job</a>
+                        <a href="#Contact Me" class="link four">Contact Me</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="About Me">
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <h3>So, my name’s Josh.</h3>
+                <br>
+            </div>
+            <div class='aboutme'>
+                <img src="./images/Teams pic zoom (2).jpg" class='picture' height=300 width=250 alt="Picture of Josh Miller">
+                <div class='info'>
+                    <p>I live in Wigan with my girlfriend Alex, my cat Greg and my dog Sally. I've created this page to try out some of the HTML, CSS and JavaScript skills which I've been learning through lockdown.
+                        <br>
+                        <br>There's some more about me in the sections below or you can find me on the following social platforms.</p>
+                    <div class="wrapper">
+                        <a href="https://en-gb.facebook.com/joshuathomas.miller"><img src="./images/facebook.png" class="facebook" alt="facebook"></a>
+                        <a href="https://www.instagram.com/josh_millz9/?hl=en"><img src="./images/instagram.png" class="instagram" alt="instagram"></a>
+                        <a href="https://uk.linkedin.com/in/josh-miller-3b55b398"><img src="./images/linkedin.png" class="linkedin" alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <section id="My Hobbies">
+            <div>
+                <h2>My Hobbies</h2>
+            </div>
+            <div class="myhobbies">
+                <div class="walking">
+                    <div class='myhobbiesinfo'>
+                        <h3>Walking</h3>
+                        <img src="./images/skyewalk.jpg" class="skyewalk" alt="Picture of Josh walking in Skye">
+                        <div>
+                            <h4> Why Walking?</h4>
+                            <p>I first started walking around 10 years ago when I completed Snowdon for the first time with two friends. For some reason in my mind I'd built Snowdon up to be a big hill. Since then I've found that taking a day out of my normally
+                                busy routine to simply walk and catch up with friends is a great way to relax.
+                                <br>
+                                <br> You can also make walking relatively competitive by trying to complete the National 3 Peaks challenge or even the Yorkshire 3 peaks. </p>
+                        </div>
+                        <div>
+                            <h4> My Favourite Walks</h4>
+                            <p>Everyone of the mountains I've climbed so far has been special in there own way but you can see my top 3 below.</p>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>Quiraing</h4>
+                        </div>
+                        <div class='quiraing'>
+                            <img src="./images/quiraing-resized.jpg" class="image" alt="View point picture from Quiraing">
+
+                            <div class='info'>
+                                <p>We climbed Quiraing when we visited Skye for my 30th birthday in September 2020. We got up at the crack of dawn (literally) to avoid the crowds.
+                                    <br>
+                                    <br> We only had a vague idea of route but the path was pretty easy to follow. It took around 4 hours to complete but it didn’t matter as there was so much to see. The picture really doesn't do it justice, it's an amazing
+                                    walk.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4>Fairfield Horseshoe</h4>
+                        </div>
+                        <div class='fairfield'>
+                            <img src="./images/fairfield-resized.jpg" class="image" alt="View point picture from Fairfield Horseshoe">
+                            <div class='info'>
+                                <p>This is my favourite route in the lake district which I’ve hiked 5/6 times. It's around a 4 hour walk at a decent pace but you could easily spend a full day hiking the route just taking in the scenery.
+                                    <br>
+                                    <br>I'd say this is the route which inspired my hiking obsession because the views are incredible. It's hard to believe this is only an hour and a half from Wigan!
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <h4>The Newlands Horshoe</h4>
+                        </div>
+                        <div class='newlands'>
+                            <img src="./images/newlands-resized.jpg" class="image" alt="View point picture from Newlands Horseshoe">
+                            <div class='info'>
+                                <p>Another one of my favourites. I've only completed this route once but I can already say it’s one of the most enjoyable I've ever done.
+                                    <br>
+                                    <br> The route is pretty challenging but fun and the views are something else. It's a long slog at around 12 miles but definitely worth it if you get the chance!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4> The Wainwrights</h4>
+                            <p>Wainwrights are the 214 English peaks (known locally as fells) described in Alfred Wainwright's seven-volume Pictorial Guide to the Lakeland Fells (1955–66). They all lie within the boundary of the Lake District National Park
+                                in Cumbria, and all but one (Castle Crag) are over 1,000 feet (304.8 m) in height. I'm aiming to get all 214 of these completed within the next 3 years. With a new baby on the way this may be a little more challenging than
+                                first though!
+                            </p>
+                            <h4>What've I climbed so far?</h4>
+                            <div class='grid-container'>
+                                <div class='grid-item'>
+                                    <p>Hellvelyn</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Old Man of Coniston</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Birks</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Arnission Crag</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>St. Sunday Crag</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Fairfield</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Hartstop above howe</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Hart Crag</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Dove Crag</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Great Rig</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Heron Pike</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Low Pike</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Nab Scar</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Seat Sandal</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Robinson</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Hindscarth</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Dale Head</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>High Spy</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Maiden Moor</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Catbells</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Red Screes</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Middle Dodd</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Caudale Moor</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Scafell Pike</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Wansfell</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Sour Howes</p>
+                                </div>
+                                <div class='grid-item'>
+                                    <p>Sallows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="My Job">
+            <div>
+                <h2>My Job</h2>
+            </div>
+            <div class="myjob">
+                <div class='info'>
+                    <p>I'm currently employed at AO in the role of a Business Analyst. Business analyst help guide businesses in improving processes, products, services and software through data analysis. These agile workers straddle the line between IT
+                        and the business to help bridge the gap and improve efficiency.
+                        <br>
+                        <br> Here are some of the skills that Business Analyst's use on a daily basis.
+                    </p>
+                </div>
+                <img src='./images/business analyst.png' class='image' alt='business analyst overview'>
+            </div>
+            </div>
+        </section>
+
+        <section id="Contact Me">
+            <div>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contactme">
+
+                <p>If you're interested in me helping out with one of your development projects, why not get in touch?</p>
+                <br>
+                <button class='form-button'>
+                    <p>Get in touch</p>
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <br>
+                <div class='form-container'>
+                    <!-- Contact me form -->
+                    <div class='form'>
+                        <form id='user-form' action="/action_page.php" autocomplete="on">
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input class="input-field name" type="text" placeholder="Your Name*" name="yourname" minlength="1 " required>
+                            </div>
+
+                            <div class="input-container ">
+                                <i class="fas fa-phone-volume"></i>
+                                <input class="input-field number" type="text " placeholder="Your Phone Number* " name="yournumber " min-lenth="11 " max-length="13 " required>
+                            </div>
+
+                            <div class="input-container ">
+                                <i class="fas fa-envelope"></i>
+                                <input class="input-field email" type="email" placeholder="Your Email* " name="youremail " minlength="8 " maxlength="40 " required>
+                            </div>
+
+                            <div class="input-container ">
+                                <i class="fas fa-pencil-alt"></i>
+                                <input class="input-field message" type="text " placeholder="Your Message* " name="yourmessage " minlength="10 " maxlength="500 " required>
+                            </div>
+                            <button type="submit" class="btn submit">Send</button>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            copyright &copy; JM Development Inc.
+            <span id="date"></span>. All rights reserved.
+        </p>
+    </footer>
+    <a class='top-link' href='#Home'>
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+
+<script src='app.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+
+</html>

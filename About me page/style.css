@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: rgb(155, 152, 152);
+    margin: 0px;
+    padding: 20px;
+    border: 2px solid rgb(155, 152, 152);
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    border: none;
+    font-size: 25px;
+    background-color: white;
+}
+
+.links-container {
+    /*hides whats inside the links-container class*/
+    height: 0;
+    overflow: hidden;
+    color: rgb(155, 152, 152);
+    /* transition: var(--transition); */
+}
+
+.link {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 550;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.link:hover {
+    transition: all 1.5s;
+    background-color: rgb(155, 152, 152);
+    color: white;
+    border: 1px solid rgb(155, 152, 152);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    color: inherit;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+    z-index: 100;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main {
+    border: 1px double black;
+    background-color: #b3a6a6c9;
+    display: flex;
+    flex-direction: column;
+    /* font-size: 15px; */
+}
+
+section {
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 60px;
+    background-color: white;
+    color: white;
+    /* border: 2px black solid; */
+    padding: 5px;
+    grid-gap: 2px;
+}
+
+.grid-item {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px black solid;
+    background-color: #3d01c9;
+}
+
+.grid-item p {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.picture {
+    position: relative;
+    border-radius: 5px;
+}
+
+.wrapper {
+    /* use the below to position social media icons within image
+    position: absolute;
+    bottom: 0px;
+    left: 50px; */
+    /* background-color: #b3a6a6c9; */
+    width: 100%;
+}
+
+.facebook,
+.instagram,
+.linkedin {
+    height: 30px;
+    margin: 20px;
+}
+
+h2 {
+    min-width: 250px;
+    border: solid rgb(155, 152, 152);
+    border-radius: 5px;
+    color: rgb(155, 152, 152);
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.skyewalk {
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d01c9;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    transition: all 1.5s ease;
+}
+
+.form-button:hover {
+    background-color: red;
+}
+
+.form-button p {
+    color: white;
+    font-size: 16px;
+}
+
+.form-container {
+    /*hides whats inside the links-container class*/
+    height: 0;
+    overflow: hidden;
+    color: rgb(155, 152, 152);
+    /*transition: var(--transition); */
+}
+
+.show-form {
+    overflow: visible;
+    height: auto;
+}
+
+
+/* Style the input container */
+
+.input-container {
+    display: flex;
+    margin: 15px auto;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    width: 70%;
+}
+
+
+/* Style the form icons */
+
+.fa-phone-volume,
+.fa-user,
+.fa-envelope,
+.fa-pencil-alt {
+    padding: 10px;
+    background: #3d01c9;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+
+/* Style the input fields */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.input-field:focus {
+    border: 2px solid #3d01c9;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: rgb(155, 152, 152);
+    color: white;
+    padding: 15px 20px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.top-link {
+    visibility: hidden;
+    color: whitesmoke;
+    background-color: grey;
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    /*link dissapeared after fixing position. Nedeed to introduce bottom and right for it to reappear*/
+    bottom: 10px;
+    right: 18px;
+    animation: bounce 2s ease-in-out infinite;
+    /*links in with the keyframes logic detailed below*/
+}
+
+.show-link {
+    visibility: visible;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skyewalk {
+        height: 250px;
+        width: auto;
+    }
+    .image {
+        height: 350px;
+        width: 350px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-auto-rows: 60px;
+        background-color: white;
+        color: white;
+        /* border: 2px black solid; */
+        padding: 5px;
+        grid-gap: 2px;
+    }
+    .grid-item {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border: 1px black solid;
+        background-color: #3d01c9;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title {
+        margin-right: auto;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .nav-toggle {
+        visibility: hidden;
+    }
+    .links-container {
+        overflow: visible;
+        color: rgb(155, 152, 152);
+        display: flex;
+        align-items: center;
+    }
+    .link {
+        max-width: 100px;
+        min-width: 50px;
+        flex-grow: 1;
+        display: inline;
+        padding: 10px;
+    }
+    .aboutme,
+    .myjob,
+    .quiraing,
+    .fairfield,
+    .newlands {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fairfield {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .info {
+        width: 40%;
+    }
+    .contactme {
+        width: 70%;
+        margin: auto;
+    }
+}
