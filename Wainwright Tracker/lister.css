@@ -1,0 +1,309 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        background-color: white;
+    }
+    
+    .nav {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3c3d40;
+        color: white;
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    
+    .fa-arrow-left {
+        color: white;
+    }
+    
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .nav-toggle {
+        border: none;
+        color: white;
+        background-color: #3c3d40;
+        font-size: 25px;
+        /* background-color: white; */
+        /*work out how to color the toggle properly*/
+    }
+    
+    .fixed-nav {
+        position: fixed;
+        width: 100%;
+        z-index: 100; 
+        /* transition-duration: 4s; */
+    }
+    
+    .filter-container {
+        overflow: hidden;
+        transform: translate(+120%);
+        transition: 2s;
+        height: 0;
+        background-color: #3c3d40;
+        color: white;
+    }
+    
+    .show-filter-container {
+        overflow: visible;
+        height: auto;
+        transform: translate(0%);
+        position: fixed;
+        right: 0%;
+        width: 80%;
+        z-index: 100;
+    }
+    
+    .opaque-background {
+        opacity: 0.3;
+        z-index: -100;
+    }
+    
+    .filter-header {
+        font-size: 18px;
+        /* font-weight: 800; */
+        display: block;
+        padding: 10px;
+        /* border-top: solid 1px lightgrey; */
+        background-color: #3c3d40;
+    }
+    
+    .filter-group {
+        padding: 10px;
+        border-top: solid 1px lightgrey;
+        border-bottom: solid 1px lightgrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .filter-wrapper,
+    .filter-wrapper-complete {
+        overflow: hidden;
+        height: 0;
+        transition: 1s;
+    }
+    
+    .filter {
+        display: flex;
+        padding: 10px;
+        padding-left: 40px;
+        /* border-bottom: solid 1px lightgrey; */
+        border-top: solid 1px lightgrey;
+        border-bottom: solid 1px lightgrey;
+        color: lightgrey;
+    }
+    
+    .fa-check {
+        padding-right: 10px;
+        color: rgb(22, 206, 22);
+        visibility: hidden;
+    }
+    
+    .show-fa-check {
+        visibility: visible;
+    }
+    
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .done-btn {
+        width: 90%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-weight: 800;
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .second-nav {
+        /*how to make a HTML input field bigger*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4d5057;
+        font-size: 15px;
+        color: white;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    .input-field::placeholder, select {
+            text-align: left; 
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700; 
+        }
+
+    .fa-search, label {
+        padding-right: 2px; 
+        font-size: 17px; 
+    }
+    
+    .search,
+    .sort {
+        width: 85%;
+        padding-top: 5px; 
+        padding-bottom: 5px; 
+
+    }
+    
+    section {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .mountain-border {
+        padding: 10px;
+        border-radius: 30px;
+        border: solid 5px white;
+    }
+    
+    .show-mountain-border {
+        border: solid 5px rgb(22, 206, 22);
+    }
+    
+    .name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    
+    .mountain-image {
+        width: 90%;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+    .image-container {
+        display: flex; 
+        align-items: center; 
+    }
+
+    .fa-angle-left, .fa-angle-right {
+        color:rgb(22, 206, 22);
+        font-size: 30px; 
+    }
+
+    .fa-angle-left {
+        margin-right: 5px; 
+    } 
+    
+    .fa-angle-right {
+        margin-left: 5px; 
+    }
+    
+    ul {
+        width: 80%;
+        font-weight: 600;
+        margin: auto;
+        color: black;
+    }
+    
+    .mountain-region,
+    .height,
+    .average-time,
+    .difficulty,
+    .completion-status {
+        padding: 10px;
+    }
+    
+    .fa-star {
+        content: "\f005";
+        color: lightgrey;
+    }
+
+    .stars-outer{
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .stars-inner{
+        position: absolute;
+        top: 0;
+        left: 0; 
+        white-space: no-wrap;
+        overflow: hidden;
+        width:0; 
+    }
+
+    .stars-outer::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: 'Font Awesome 5 Free';
+        color: lightgrey;
+    }
+
+    .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: gold;
+        width: 100%;
+        
+    }
+    
+    form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .checkbox {
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: rgb(22, 206, 22);
+    }
+    
+    .btn {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(22, 206, 22);
+        width: 80%;
+        padding: 10px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+    }
+    
+    .btn:hover {
+        transform: scale(1.2);
+    }
+    
+    .seperator {
+        width: 90%;
+        margin: auto;
+    }
+    
+    p {
+        color: whitesmoke;
+    }
+    
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
