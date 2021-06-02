@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+.nav {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3d40;
+  color: white;
+  font-size: 25px;
+  padding: 5px 15px;
+}
+
+.fa-arrow-left {
+  color: white;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav-toggle {
+  border: none;
+  color: white;
+  background-color: #3c3d40;
+  font-size: 25px;
+  /* background-color: white; */
+  /*work out how to color the toggle properly*/
+}
+
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+  /* transition-duration: 4s; */
+}
+
+.filter-container {
+  overflow: hidden;
+  transform: translate(+120%);
+  transition: 2s;
+  height: 0;
+  background-color: #3c3d40;
+  color: white;
+}
+
+.show-filter-container {
+  overflow: visible;
+  height: auto;
+  transform: translate(0%);
+  position: fixed;
+  right: 0%;
+  width: 80%;
+  z-index: 100;
+}
+
+.opaque-background {
+  opacity: 0.3;
+  z-index: -100;
+}
+
+.filter-header {
+  font-size: 18px;
+  /* font-weight: 800; */
+  display: block;
+  padding: 10px;
+  /* border-top: solid 1px lightgrey; */
+  background-color: #3c3d40;
+}
+
+.filter-group {
+  padding: 10px;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-wrapper,
+.filter-wrapper-complete {
+  overflow: hidden;
+  height: 0;
+  transition: 1s;
+}
+
+.filter {
+  display: flex;
+  padding: 10px;
+  padding-left: 40px;
+  /* border-bottom: solid 1px lightgrey; */
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  color: lightgrey;
+}
+
+.fa-check {
+  padding-right: 10px;
+  color: rgb(22, 206, 22);
+  visibility: hidden;
+}
+
+.show-fa-check {
+  visibility: visible;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.done-btn {
+  width: 90%;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 800;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search,
+.sort {
+  width: 80%;
+}
+
+section {
+  font-family: "Montserrat", sans-serif;
+}
+
+.mountain-border {
+  padding: 10px;
+  border-radius: 30px;
+  border: solid 5px white;
+}
+
+.show-mountain-border {
+  border: solid 5px rgb(22, 206, 22);
+}
+
+.name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.mountain-image {
+  width: 90%;
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: rgb(22, 206, 22);
+  font-size: 30px;
+}
+
+.fa-angle-left {
+  margin-right: 5px;
+}
+
+.fa-angle-right {
+  margin-left: 5px;
+}
+
+ul {
+  width: 80%;
+  font-weight: 600;
+  margin: auto;
+  color: black;
+}
+
+.mountain-region,
+.height,
+.average-time,
+.difficulty,
+.completion-status {
+  padding: 10px;
+}
+
+label {
+  font-weight: 800;
+  display: block;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 8px;
+  width: 150px;
+  border: solid 1px black;
+}
+
+.input::placeholder,
+.input,
+.complete {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.climber,
+.view {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-time {
+  display: block;
+  margin: 0 auto;
+}
+
+.complete {
+  background-color: rgb(22, 206, 22);
+  width: 50%;
+  padding: 10px;
+  /* padding-top: 5px;
+    padding-bottom: 5px; */
+  margin: 0 auto;
+  margin-top: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.complete:hover {
+  transform: scale(1.2);
+}
+
+/* form {
+    display: flex;
+    align-items: center;
+} */
+
+p {
+  color: whitesmoke;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
